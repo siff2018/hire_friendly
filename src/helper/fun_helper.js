@@ -8,6 +8,12 @@ export function double(arr = []){
        throw new Error("You have not passed Array!")   
 
     }
+
+    //  check each value in array is a number if not throw new error
+
+    if(!arr.every(val => typeof val === "number")){
+        throw new Error("Array must be contain numbers")
+    }
     
     return arr.map(num => num * 2)
 }
