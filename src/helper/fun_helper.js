@@ -8,6 +8,8 @@ export function double(arr){
        return arr.map(num => num * 2)
 
 
+   }else{
+    throw new Error("You have not passed Array!")
    }
 
 }
