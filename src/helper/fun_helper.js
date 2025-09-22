@@ -34,3 +34,10 @@ export function onlyEven(arr = []){
    
     return arr.filter((e)=>{return e % 2 == 0})
 }
+
+
+export function sum(arr = []){
+validationNumberArray(arr);
+
+return arr.reduce((acc,cur)=> acc + cur)
+}
