@@ -2,7 +2,8 @@
 I hereby  I create production code for these productive functions
 */
 
-export function double(arr = []){
+function validationNumberArray(arr){
+
    if(!Array.isArray(arr)){
 
        throw new Error("You have not passed Array!")   
@@ -14,7 +15,12 @@ export function double(arr = []){
     if(!arr.every(val => typeof val === "number")){
         throw new Error("Array must be contain numbers")
     }
-    
+}
+
+
+export function double(arr = []){
+
+    validationNumberArray(arr);
     return arr.map(num => num * 2)
 }
 
@@ -24,9 +30,7 @@ export function double(arr = []){
 
 export function onlyEven(arr = []){
 
-    if(!Array.isArray(arr)){
-        throw new Error("You have not passed Array!")
-    }
+ validationNumberArray(arr);
    
     return arr.filter((e)=>{return e % 2 == 0})
 }
