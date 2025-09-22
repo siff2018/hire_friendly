@@ -27,5 +27,6 @@ export function onlyEven(arr = []){
     if(!Array.isArray(arr)){
         throw new Error("You have not passed Array!")
     }
-
+   
+    return arr.filter((e)=>{return e % 2 == 0})
 }
