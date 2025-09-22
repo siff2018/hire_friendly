@@ -19,4 +19,13 @@ export function double(arr = []){
 }
 
 
+// onlyeven()
 
+
+export function onlyEven(arr = []){
+
+    if(!Array.isArray(arr)){
+        throw new Error("You have not passed Array!")
+    }
+
+}
