@@ -41,3 +41,9 @@ validationNumberArray(arr);
 
 return arr.reduce((acc,cur)=> acc + cur)
 }
+
+
+export function countBy(word){
+
+    return word.length
+}
