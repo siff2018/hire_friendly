@@ -47,3 +47,21 @@ export function countBy(word){
 
     return word.length
 }
+
+
+// counter maker
+
+
+export function counterMaker(){
+let count= 0;
+
+return function(){
+
+    return count++;
+}
+
+
+}
+
+let counter = counterMaker()
+
